@@ -19,7 +19,9 @@ const renderPortfolio = () => {
 
     track.innerHTML = '';
 
-    portfolioData.forEach(item => {
+    const validItems = portfolioData.filter(item => item.src && item.src.trim() !== '');
+
+    validItems.forEach(item => {
         const card = document.createElement('div');
         card.className = 'carousel-card';
         card.dataset.category = item.category;
