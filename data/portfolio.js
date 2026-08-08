@@ -11,7 +11,7 @@
 export const portfolioData = [
     {
         id: 'nude-elegante',
-        src: '',
+        src: "https://res.cloudinary.com/oec83bid/image/upload/v1786166303/IMG_20210814_124456_jzdldb.jpg",
         alt: 'Diseño Nude Elegante',
         titleKey: 'card1_title',
         descKey: 'card1_desc',
