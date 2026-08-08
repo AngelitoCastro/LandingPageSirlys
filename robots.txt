@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /js/
+
+Sitemap: https://www.sirlysortega.com/sitemap.xml
