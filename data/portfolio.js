@@ -19,7 +19,7 @@ export const portfolioData = [
     },
     {
         id: 'arte-minimalista',
-        src: '',
+        src: 'https://res.cloudinary.com/oec83bid/image/upload/c_crop,g_north_west,h_2117,w_2380,x_68,y_506/q_auto:best/IMG_20210909_152534_ayc4ot.jpg',
         alt: 'Nail Art Minimalista',
         titleKey: 'card2_title',
         descKey: 'card2_desc',
@@ -27,7 +27,7 @@ export const portfolioData = [
     },
     {
         id: 'semi-permanente',
-        src: '',
+        src: 'https://res.cloudinary.com/oec83bid/image/upload/c_crop,g_north_west,h_2708,w_2448/IMG_20201120_114921_yn97rg.jpg',
         alt: 'Esmaltado Semi-Permanente',
         titleKey: 'card3_title',
         descKey: 'card3_desc',
@@ -35,7 +35,7 @@ export const portfolioData = [
     },
     {
         id: 'aurora-chrome',
-        src: '',
+        src: 'https://res.cloudinary.com/oec83bid/image/upload/v1786144900/IMG_20201031_175918_t2tbey.jpg',
         alt: 'Efecto Aurora Chrome',
         titleKey: 'card4_title',
         descKey: 'card4_desc',
@@ -43,7 +43,7 @@ export const portfolioData = [
     },
     {
         id: 'esculpidas',
-        src: '',
+        src: 'https://res.cloudinary.com/oec83bid/image/upload/IMG_20200925_114357_twnyqi.jpg',
         alt: 'Extensiones Esculpidas',
         titleKey: 'card5_title',
         descKey: 'card5_desc',
