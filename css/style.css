@@ -58,7 +58,7 @@
     --surface-overlay: rgba(245, 236, 227, .92);
 
     /* Marca */
-    --accent: #d35240;
+    --accent: rgb(211, 82, 64);
     --accent-gl: rgba(211, 82, 64, .42);
     --accent-soft: rgba(211, 82, 64, .1);
     --accent-ui: #be4433;
@@ -479,7 +479,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 /* ---------------------------------------------------------------------
    SERVICIOS
    --------------------------------------------------------------------- */
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-lg); }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); }
 .service-card {
     padding: var(--space-xl) var(--space-lg);
     border-radius: var(--radius-lg);

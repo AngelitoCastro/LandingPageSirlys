@@ -1,0 +1,17 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="silverGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+  <!-- Dark Slate Background Circle to make gold/silver pop with maximum contrast -->
+  <circle cx="60" cy="60" r="54" fill="rgb(211, 82, 64)" />
+  <!-- Diagonal Orbit Ring -->
+  <ellipse cx="60" cy="60" rx="46" ry="18" fill="none" stroke="url(#silverGold)" stroke-width="1.5" transform="rotate(-25 60 60)" />
+  <!-- Sparkles -->
+  <path d="M 60 10 L 63 22 L 75 25 L 63 28 L 60 40 L 57 28 L 45 25 L 57 22 Z" fill="#fef08a" />
+  <path d="M 95 80 L 96 86 L 102 87 L 96 88 L 95 94 L 94 88 L 88 87 L 94 86 Z" fill="#ffffff" opacity="0.8" />
+  <text x="60" y="75" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="bold" font-size="44" fill="url(#silverGold)">S</text>
+</svg>

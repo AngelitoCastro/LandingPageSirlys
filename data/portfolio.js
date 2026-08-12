@@ -5,17 +5,16 @@
    TODO Fase 4 (Cloudinary / Pinterest):
    Sustituye las URLs de demostración por tus imágenes optimizadas.
    Mantén las transformaciones f_auto,q_auto,w_X para rendimiento.
-   Otro modo: sube tu col·laboración a Cloudinary y usa tu cloud name.
    ============================================================ */
 
 export const portfolioData = [
     {
-        id: 'nude-elegante',
+        id: 'esculpidas-gel',
         src: "https://res.cloudinary.com/oec83bid/image/upload/v1786166303/IMG_20210814_124456_jzdldb.jpg",
-        alt: 'Diseño Nude Elegante',
+        alt: 'Diseño esculpido en gel',
         titleKey: 'card1_title',
         descKey: 'card1_desc',
-        category: 'semi-permanente'
+        category: 'esculpidas'
     },
     {
         id: 'arte-minimalista',
@@ -27,7 +26,7 @@ export const portfolioData = [
     },
     {
         id: 'semi-permanente',
-        src: 'https://res.cloudinary.com/oec83bid/image/upload/c_crop,g_north_west,h_2708,w_2448/IMG_20201120_114921_yn97rg.jpg',
+        src: '',
         alt: 'Esmaltado Semi-Permanente',
         titleKey: 'card3_title',
         descKey: 'card3_desc',
@@ -37,24 +36,16 @@ export const portfolioData = [
         id: 'aurora-chrome',
         src: 'https://res.cloudinary.com/oec83bid/image/upload/v1786144900/IMG_20201031_175918_t2tbey.jpg',
         alt: 'Efecto Aurora Chrome',
-        titleKey: 'card4_title',
-        descKey: 'card4_desc',
+        titleKey: 'card3_title',
+        descKey: 'card3_desc',
         category: 'nail-art'
     },
     {
-        id: 'esculpidas',
+        id: 'esculpidas-acrilico',
         src: 'https://res.cloudinary.com/oec83bid/image/upload/IMG_20200925_114357_twnyqi.jpg',
         alt: 'Extensiones Esculpidas',
-        titleKey: 'card5_title',
-        descKey: 'card5_desc',
+        titleKey: 'card4_title',
+        descKey: 'card4_desc',
         category: 'esculpidas'
-    },
-    {
-        id: 'frances-moderno',
-        src: '',
-        alt: 'Esmaltado Francés Moderno',
-        titleKey: 'card6_title',
-        descKey: 'card6_desc',
-        category: 'frances'
     }
 ];

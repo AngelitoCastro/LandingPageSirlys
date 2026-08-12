@@ -12,27 +12,8 @@
         content="Sirlys Ortega - Profesional Manicurist. Diseños exclusivos de uñas, cuidado premium y arte en manicure. Reserva tu cita en línea.">
     <meta name="author" content="Sirlys Ortega">
     <meta name="theme-color" content="#f5ece3">
-    <!-- Open Graph (WhatsApp / Instagram / Facebook previews) -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Sirlys Ortega">
-    <meta property="og:title" content="Sirlys Ortega | Profesional Manicurist">
-    <meta property="og:description"
-        content="Diseños exclusivos de uñas, cuidado premium y arte en nail art. Reserva tu cita en línea.">
-    <meta property="og:url" content="https://www.sirlysortega.com/">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80&w=1200">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:locale:alternate" content="en_US">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sirlys Ortega | Profesional Manicurist">
-    <meta name="twitter:description"
-        content="Diseños exclusivos de uñas, cuidado premium y arte en nail art. Reserva tu cita en línea.">
-    <meta name="twitter:image"
-        content="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80&w=1200">
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23e26d5c'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='bold' fill='%23fff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/icon.svg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,14 +32,6 @@
         "name": "Sirlys Ortega",
         "description": "Profesional Manicurist: esmaltado semi-permanente, uñas esculpidas, nail art y mantenimiento.",
         "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80&w=1200",
-        "telephone": "+573157586394",
-        "email": "contacto@sirlysortega.com",
-        "url": "https://www.sirlysortega.com/",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Centro",
-            "addressCountry": "CO"
-        },
         "priceRange": "$$"
     }
     </script>
@@ -73,7 +46,7 @@
     <header id="main-header">
         <div class="header-container">
             <a href="#hero" class="logo" id="logo-link">
-                <span class="logo-icon">S</span>
+                <img src="assets/icons/logos/logo.svg" alt="Logo" class="logo-img" width="44" height="44">
                 <span class="logo-text">Sirlys</span>
             </a>
 
@@ -202,19 +175,32 @@
                     <div class="service-card reveal">
                         <div class="service-icon"><i class="fa-solid fa-hand-sparkles" aria-hidden="true"></i></div>
                         <h3 data-translate="service2_title">Uñas Esculpidas</h3>
-                        <p data-translate="service2_desc">Extensiones en acrílico con la forma y longitud que prefieras.
-                        </p>
+                        <p data-translate="service2_desc">Extensiones en gel o poligel con la forma y longitud que
+                            prefieras.</p>
                     </div>
                     <div class="service-card reveal">
                         <div class="service-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
-                        <h3 data-translate="service3_title">Nail Art Personalizado</h3>
-                        <p data-translate="service3_desc">Diseños a mano alzada, únicos para cada clienta.</p>
+                        <h3 data-translate="service3_title">Nail Art y Efectos</h3>
+                        <p data-translate="service3_desc">Diseños a mano alzada, técnica Dipping y efecto ojo de gato.
+                        </p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></div>
+                        <h3 data-translate="service5_title">Base Rubber</h3>
+                        <p data-translate="service5_desc">Fortalecimiento y nivelación para proteger y dar estructura a
+                            tus uñas naturales.</p>
                     </div>
                     <div class="service-card reveal">
                         <div class="service-icon"><i class="fa-solid fa-broom" aria-hidden="true"></i></div>
                         <h3 data-translate="service4_title">Mantenimiento / Retiro</h3>
-                        <p data-translate="service4_desc">Retiro seguro y mantenimiento para conservar la salud de tus
-                            uñas.</p>
+                        <p data-translate="service4_desc">Retiro seguro de acrílico y mantenimiento para conservar la
+                            salud de tus uñas.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-spa" aria-hidden="true"></i></div>
+                        <h3 data-translate="service6_title">Pedicure</h3>
+                        <p data-translate="service6_desc">Cuidado completo, exfoliación y esmaltado impecable para tus
+                            pies.</p>
                     </div>
                 </div>
             </div>
@@ -460,6 +446,7 @@
                             conmigo para agendar una sesión personalizada o resolver cualquier duda sobre los servicios.
                         </p>
 
+
                     </div>
 
                     <!-- Contact Right: Appointment Request Form -->
@@ -480,11 +467,22 @@
                                         Selecciona un servicio</option>
                                     <option value="semipermanent" data-translate="opt_semi">Esmaltado Semi-Permanente
                                     </option>
-                                    <option value="sculpted" data-translate="opt_sculp">Uñas Esculpidas (Acrílico)
-                                    </option>
-                                    <option value="nailart" data-translate="opt_art">Nail Art Personalizado</option>
+                                    <option value="dipping" data-translate="opt_dipping">Uñas Dipping</option>
                                     <option value="maintenance" data-translate="opt_maint">Mantenimiento / Retiro
                                     </option>
+                                    <option value="poligel" data-translate="opt_poligel">Esculpidas en poligel
+                                    </option>
+                                    <option value="rubber" data-translate="opt_rubber">Base Rubber
+                                    </option>
+                                    <option value="ojogato" data-translate="opt_ojogato">Ojo de gato
+                                    </option>
+                                    <option value="gel" data-translate="opt_gel">Esculpidas en gel
+                                    </option>
+                                    <option value="removal" data-translate="opt_remov">Retiro de acrílico
+                                    </option>
+                                    <option value="pedicure" data-translate="opt_pedicure">Pedicure
+                                    </option>
+
                                 </select>
                             </div>
 
@@ -525,7 +523,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <a href="#" class="logo">
-                    <span class="logo-icon">S</span>
+                    <img src="assets/icons/logos/logo.svg" alt="Logo" class="logo-img" width="44" height="44">
                     <span class="logo-text">Sirlys</span>
                 </a>
                 <p data-translate="footer_desc">Profesional Manicurist | Diseños exclusivos y cuidado premium para tus
