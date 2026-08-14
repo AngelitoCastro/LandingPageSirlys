@@ -10,7 +10,7 @@
 export const testimonialsData = [
     {
         id: 'testimonial-1',
-        quoteKey: 'testimonial1_quote',      // ← decir en translation.js
+        quoteKey: 'testimonial1_quote',
         authorKey: 'testimonial1_author',
         stars: 5
     },
@@ -24,6 +24,24 @@ export const testimonialsData = [
         id: 'testimonial-3',
         quoteKey: 'testimonial3_quote',
         authorKey: 'testimonial3_author',
+        stars: 5
+    },
+    {
+        id: 'testimonial-4',
+        quoteKey: 'testimonial4_quote',
+        authorKey: 'testimonial4_author',
+        stars: 5
+    },
+    {
+        id: 'testimonial-5',
+        quoteKey: 'testimonial5_quote',
+        authorKey: 'testimonial5_author',
+        stars: 5
+    },
+    {
+        id: 'testimonial-6',
+        quoteKey: 'testimonial6_quote',
+        authorKey: 'testimonial6_author',
         stars: 5
     }
 ];
