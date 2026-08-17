@@ -68,7 +68,10 @@ const initPortfolioFilters = () => {
     });
 };
 
-/* ---- Shared carousel: arrows + drag/touch ---- */
+/* ---- Shared carousel: arrows + drag (desktop) ----
+   On touch devices we deliberately do NOT intercept touch events:
+   native scroll momentum stays fluid. Drag-to-scroll is only
+   wired for pointer/mouse input on desktop. */
 const initCarousel = (trackId, prevId, nextId) => {
     const track = document.getElementById(trackId);
     const prevBtn = document.getElementById(prevId);
@@ -85,6 +88,10 @@ const initCarousel = (trackId, prevId, nextId) => {
     if (nextBtn) nextBtn.addEventListener('click', () => track.scrollBy({ left: getShift(), behavior: 'smooth' }));
     if (prevBtn) prevBtn.addEventListener('click', () => track.scrollBy({ left: -getShift(), behavior: 'smooth' }));
 
+    // Drag-to-scroll: mouse / pointer only (never touch)
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+    if (isTouchDevice) return;
+
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -92,7 +99,7 @@ const initCarousel = (trackId, prevId, nextId) => {
     const start = (e) => {
         isDown = true;
         track.classList.add('dragging');
-        startX = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+        startX = e.pageX - track.offsetLeft;
         scrollLeft = track.scrollLeft;
     };
 
@@ -103,18 +110,14 @@ const initCarousel = (trackId, prevId, nextId) => {
 
     const move = (e) => {
         if (!isDown) return;
-        e.preventDefault();
-        const x = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
-        track.scrollLeft = scrollLeft - (x - startX) * 2.0;
+        const x = e.pageX - track.offsetLeft;
+        track.scrollLeft = scrollLeft - (x - startX) * 1.0;
     };
 
     track.addEventListener('mousedown', start);
     track.addEventListener('mouseleave', stop);
     track.addEventListener('mouseup', stop);
     track.addEventListener('mousemove', move);
-    track.addEventListener('touchstart', start, { passive: true });
-    track.addEventListener('touchend', stop);
-    track.addEventListener('touchmove', move, { passive: false });
 };
 
 /* ---- TESTIMONIALS CAROUSEL ---- */
