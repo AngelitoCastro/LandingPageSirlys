@@ -105,7 +105,7 @@ const initCarousel = (trackId, prevId, nextId) => {
         if (!isDown) return;
         e.preventDefault();
         const x = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
-        track.scrollLeft = scrollLeft - (x - startX) * 1.0;
+        track.scrollLeft = scrollLeft - (x - startX) * 2.0;
     };
 
     track.addEventListener('mousedown', start);
