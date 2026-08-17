@@ -527,7 +527,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 6px 16px -8px var(--accent); }
 
 .carousel-wrapper { position: relative; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-.carousel-track { display: flex; gap: 28px; overflow-x: auto; scroll-behavior: smooth; padding: 8px 10px 28px; scrollbar-width: none; }
+.carousel-track { display: flex; gap: 28px; overflow-x: auto; scroll-behavior: smooth; padding: 8px 10px 28px; scrollbar-width: none; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
 .carousel-track::-webkit-scrollbar, .testimonial-track::-webkit-scrollbar { display: none; }
 
 .carousel-card {
@@ -538,6 +538,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
     background: var(--bg-primary);
     box-shadow: var(--shadow-md);
     transition: transform .4s var(--ease), box-shadow .4s var(--ease), background-color var(--speed);
+    scroll-snap-align: center;
 }
 .carousel-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px var(--shadow-strong); }
 .card-image { position: relative; height: 320px; overflow: hidden; }
@@ -594,7 +595,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
    TESTIMONIOS
    --------------------------------------------------------------------- */
 .testimonial-carousel-wrapper { position: relative; max-width: 900px; margin: 0 auto; padding: 0 40px; }
-.testimonial-track { display: flex; gap: 28px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; padding: 10px 10px 20px; }
+.testimonial-track { display: flex; gap: 28px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; padding: 10px 10px 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
 .testimonial-card {
     flex: 0 0 100%;
     padding: var(--space-2xl);
@@ -603,6 +604,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
     text-align: center;
     box-shadow: var(--shadow-md);
     transition: background-color var(--speed);
+    scroll-snap-align: center;
 }
 .testimonial-stars { color: var(--accent); font-size: 1.1rem; margin-bottom: var(--space-sm); }
 .testimonial-quote { font-style: italic; color: var(--text-secondary); font-size: var(--text-md); line-height: 1.7; margin-bottom: var(--space-sm); }
