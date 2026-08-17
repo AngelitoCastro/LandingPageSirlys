@@ -3,4 +3,4 @@ Allow: /
 Disallow: /data/
 Disallow: /js/
 
-Sitemap: https://www.sirlysortega.com/sitemap.xml
+Sitemap: https://sirlysorteganails.vercel.app/sitemap.xml

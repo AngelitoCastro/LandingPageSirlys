@@ -33,7 +33,6 @@ python -m http.server 8080   # luego abrir http://localhost:8080
 
 ## Gotchas
 
-- **Número de WhatsApp inconsistente**: `js/whatsapp.js` y el botón del hero usan `573157586394`; el footer usa `573235056010` (`index.html`). Decidir uno solo y unificar.
 - **Tema claro/oscuro**: se eliminó el modo oscuro y el botón de toggle. El sitio usa un único tema claro. Las variables CSS están definidas en `css/style.css:6` (`:root`) sin overrides de tema. No reintroducir patrones de tema oscuro ni variables circulares.
 - **Animaciones**: los elementos con clase `.reveal` se ocultan si `html.js` está presente y JS falla, quedan invisibles. El `prefers-reduced-motion` se respeta en CSS.
 - **Idioma del sitio**: contenido pensado para audiencia colombiana, español como idioma por defecto.

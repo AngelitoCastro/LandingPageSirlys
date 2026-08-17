@@ -28,8 +28,8 @@ export const portfolioData = [
         id: 'semi-permanente',
         src: '',
         alt: 'Esmaltado Semi-Permanente',
-        titleKey: 'card3_title',
-        descKey: 'card3_desc',
+        titleKey: 'card5_title',
+        descKey: 'card5_desc',
         category: 'semi-permanente'
     },
     {

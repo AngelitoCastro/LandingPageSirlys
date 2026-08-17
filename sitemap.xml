@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://www.sirlysortega.com/</loc>
-        <lastmod>2026-08-03</lastmod>
+        <loc>https://sirlysorteganails.vercel.app/</loc>
+        <lastmod>2026-08-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="es" href="https://www.sirlysortega.com/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.sirlysortega.com/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://sirlysorteganails.vercel.app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sirlysorteganails.vercel.app/?lang=en"/>
     </url>
 </urlset>
